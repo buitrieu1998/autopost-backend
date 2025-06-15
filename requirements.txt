@@ -4,3 +4,8 @@ requests
 openai
 python-dotenv
 requests-oauthlib
+moviepy
+typer[all]
+jinja2
+python-multipart
+pyinstaller
