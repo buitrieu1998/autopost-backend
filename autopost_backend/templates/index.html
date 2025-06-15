@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AutoPost Backend</title>
+</head>
+<body>
+    <h1>AutoPost Backend</h1>
+    <h2>Generate Image</h2>
+    <form method="post" action="/generate-image">
+        <input type="text" name="prompt" placeholder="Prompt" />
+        <button type="submit">Generate</button>
+    </form>
+
+    <h2>Post to Instagram</h2>
+    <form method="post" action="/instagram/post">
+        <input type="text" name="prompt" placeholder="Prompt" />
+        <input type="text" name="caption" placeholder="Caption" />
+        <button type="submit">Post</button>
+    </form>
+
+    <h2>Bulk Edit Videos</h2>
+    <form method="post" action="/video/bulk-edit">
+        <input type="text" name="input_dir" placeholder="Input directory" />
+        <input type="text" name="output_dir" placeholder="Output directory" />
+        <input type="text" name="text" placeholder="Overlay text" />
+        <button type="submit">Start</button>
+    </form>
+</body>
+</html>
